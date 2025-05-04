@@ -3,6 +3,6 @@
     "tailwindcss": "^3.4.1"
   },
   "scripts": {
-    "build": "tailwindcss -i ./src/styles.css -o ./dist/output.css --minify"
+    "build": "tailwindcss -i ./public/styles.css -o ./output/output.css --minify"
   }
 }
