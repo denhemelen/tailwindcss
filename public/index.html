@@ -1,12 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ароматна Кава - Найкраща кав'ярня у місті</title>
     <link rel="stylesheet" href="/output/output.css">
 </head>
-<body>
-    <h1>Tailwind</h1>
+<body class="bg-amber-50">
+    <!-- Шапка сайту -->
+    <header class="bg-amber-900 text-amber-50 shadow-lg">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold">Ароматна Кава</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="hover:text-amber-200">Головна</a>
+                    <a href="#menu" class="hover:text-amber-200">Меню</a>
+                    <a href="#about" class="hover:text-amber-200">Про нас</a>
+                    <a href="#contact" class="hover:text-amber-200">Контакти</a>
+                </div>
+                <button class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Герой секція -->
+    <section class="bg-amber-800 text-amber-50 py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Найкраща кава у місті</h1>
+            <p class="text-xl md:text-2xl mb-8">Справжній смак та аромат для справжніх поціновувачів</p>
+            <a href="#menu" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">Переглянути меню</a>
+        </div>
+    </section>
+
+    <!-- Секція меню -->
+    <section id="menu" class="py-16 bg-amber-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-amber-900 mb-12">Наше меню</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Кава 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://source.unsplash.com/random/400x300/?coffee,espresso" alt="Еспресо" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-amber-900 mb-2">Еспресо</h3>
+                        <p class="text-amber-800 mb-4">Міцний, насичений смак справжньої італійської кави.</p>
+                        <span class="text-amber-600 font-bold">35 грн</span>
+                    </div>
+                </div>
+                
+                <!-- Кава 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://source.unsplash.com/random/400x300/?coffee,cappuccino" alt="Капучино" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-amber-900 mb-2">Капучино</h3>
+                        <p class="text-amber-800 mb-4">Ідеальний баланс еспресо, молока та молочної піни.</p>
+                        <span class="text-amber-600 font-bold">45 грн</span>
+                    </div>
+                </div>
+                
+                <!-- Кава 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://source.unsplash.com/random/400x300/?coffee,latte" alt="Лате" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-amber-900 mb-2">Лате</h3>
+                        <p class="text-amber-800 mb-4">Ніжний смак з більшою кількістю молока.</p>
+                        <span class="text-amber-600 font-bold">50 грн</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Про нас -->
+    <section id="about" class="py-16 bg-amber-100">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://source.unsplash.com/random/600x400/?coffee,shop" alt="Наша кав'ярня" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold text-amber-900 mb-6">Про нашу кав'ярню</h2>
+                    <p class="text-amber-800 mb-4">Ми - маленька, але дуже затишна кав'ярня, яка працює з 2010 року. Наша місія - дарувати вам найкращі моменти з чашкою чудової кави.</p>
+                    <p class="text-amber-800 mb-4">Ми використовуємо тільки свіжообсмажені зерна з етіопії, колумбії та бразилії, які ми обираємо з особливою любов'ю.</p>
+                    <p class="text-amber-800">Наші кавовари - справжні майстри своєї справи, які приготують для вас ідеальну чашку кави.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакти -->
+    <section id="contact" class="py-16 bg-amber-900 text-amber-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Як нас знайти</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Графік роботи</h3>
+                    <p class="mb-2">Понеділок - П'ятниця: 8:00 - 22:00</p>
+                    <p class="mb-2">Субота - Неділя: 9:00 - 23:00</p>
+                    
+                    <h3 class="text-xl font-bold mt-8 mb-4">Контакти</h3>
+                    <p class="mb-2">вул. Кавова 10, м. Київ</p>
+                    <p class="mb-2">+380 12 345 6789</p>
+                    <p>info@aromatnakava.com</p>
+                </div>
+                
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.124208598321!2d30.523490315731414!3d50.45041127947525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce50ff2e3c1f%3A0x6d5a5a5a5a5a5a5a!2sKyiv%2C%20Ukraine!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="rounded-lg shadow-lg"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Підвал -->
+    <footer class="bg-amber-950 text-amber-200 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2023 Ароматна Кава. Всі права захищені.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="hover:text-amber-50">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                </a>
+                <a href="#" class="hover:text-amber-50">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+                <a href="#" class="hover:text-amber-50">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Мобільне меню
+        document.querySelector('button').addEventListener('click', function() {
+            const nav = document.querySelector('.hidden');
+            nav.classList.toggle('hidden');
+            nav.classList.toggle('flex');
+            nav.classList.toggle('flex-col');
+            nav.classList.toggle('absolute');
+            nav.classList.toggle('top-16');
+            nav.classList.toggle('right-6');
+            nav.classList.toggle('bg-amber-800');
+            nav.classList.toggle('p-4');
+            nav.classList.toggle('rounded');
+            nav.classList.toggle('space-y-4');
+        });
+    </script>
 </body>
 </html>
